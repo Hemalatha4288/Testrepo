@@ -1,0 +1,32 @@
+.my{
+  width:1000px;
+  height:400px;
+  border:2px solid black;
+  padding:10px;
+  margin:30px;
+  background-color: dimgrey;
+}
+header {
+  border:1px solid white;
+  background-color: chocolate;
+  text-align: center;
+}
+section{
+border:1px solid white;
+background-color: black;
+width:200px;
+height:220px;
+text-align:center;
+padding-top:100px;
+color: antiquewhite;
+}
+.main{
+  text-align: center;
+
+}
+footer{
+      border:1px solid white;
+      background-color: chocolate;
+      text-align: center;
+      margin-top:-35px;
+}
