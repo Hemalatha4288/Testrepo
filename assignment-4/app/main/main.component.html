@@ -1,0 +1,15 @@
+<h1>main works!</h1>
+<div class="main">
+    <button (click)="start()">Start</button>
+    <button (click)="stop()">Stop</button>
+    <div class="output">
+      <h2>Odd Numbers:</h2>
+      <ul>
+        <li *ngFor="let oddNumber of oddNumbers">{{ oddNumber }}</li>
+      </ul>
+      <h2>Even Numbers:</h2>
+      <ul>
+        <li *ngFor="let evenNumber of evenNumbers">{{ evenNumber }}</li>
+      </ul>
+    </div>
+  </div>

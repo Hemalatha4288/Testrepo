@@ -1,0 +1,9 @@
+<h1>country-list works!</h1>
+<div>
+    <h2>Countries List</h2>
+    <input [(ngModel)]="newCountry" placeholder="Add a country" (keyup.enter)="addCountry()" />
+    <ul>
+      <li *ngFor="let country of countries | sortCountries: sortDirection">{{ country }}</li>
+    </ul>
+    <button (click)="toggleSortDirection()">Toggle Sort</button>
+  </div>
