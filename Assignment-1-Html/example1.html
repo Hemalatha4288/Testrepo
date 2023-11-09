@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #colorDiv {
+      width: 100px;
+      height: 100px;
+      background-color: red; /* Default color */
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="colorInput" placeholder="Enter a color">
+  <button id="setColorButton">Set Color</button>
+  <div id="colorDiv"></div>
+
+  <script>
+    const colorInput = document.getElementById('colorInput');
+    const setColorButton = document.getElementById('setColorButton');
+    const colorDiv = document.getElementById('colorDiv');
+
+    setColorButton.addEventListener('click', () => {
+      const color = colorInput.value;
+      colorDiv.style.backgroundColor = color;
+    });
+  </script>
+</body>
+</html>

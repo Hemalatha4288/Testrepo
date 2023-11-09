@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="pg11.css">
+    <title>Invoice</title>
+    <style>
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:last-child {
+    font-weight: bold;
+}
+
+td:nth-child(1), th:nth-child(1) {
+    text-align: left;
+}
+
+td:nth-child(3), td:nth-child(4) {
+    text-align: right;
+}
+
+td:nth-child(2), th:nth-child(2) {
+    text-align: right;
+}
+
+td:nth-child(4), th:nth-child(4) {
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>Coffee mug</td>
+            <td>$10.00</td>
+            <td>5</td>
+            <td>$50.00</td>
+        </tr>
+        <tr>
+            <td>Polo shirt</td>
+            <td>$20.00</td>
+            <td>5</td>
+            <td>$100.00</td>
+        </tr>
+        <tr>
+            <td>Red stapler</td>
+            <td>$9.00</td>
+            <td>4</td>
+            <td>$36.00</td>
+        </tr>
+        <tr>
+            <td>Subtotal</td>
+            <td></td>
+            <td></td>
+            <td>$186.00</td>
+        </tr>
+        <tr>
+            <td>Shipping</td>
+            <td></td>
+            <td></td>
+            <td>$12.00</td>
+        </tr>
+        <tr>
+            <td>Total Due</td>
+            <td></td>
+            <td></td>
+            <td>$198.00</td>
+        </tr>
+    </table>
+</body>
+</html>

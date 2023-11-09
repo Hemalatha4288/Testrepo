@@ -1,0 +1,8 @@
+/* Style for invalid input fields */
+input[required]:invalid, input[pattern]:invalid {
+    border-color: #A5340B;
+}
+/* Style for valid input fields */
+input[required]:valid, input[pattern]:valid {
+    border-color: #046c1ef7;
+}

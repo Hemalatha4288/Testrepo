@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #textPara {
+      font-size: 16px; /* Default font size */
+    }
+  </style>
+</head>
+<body>
+  <button id="increaseFontButton">Increase Font Size</button>
+  <button id="decreaseFontButton">Decrease Font Size</button>
+  <p id="textPara">This is a sample text.</p>
+
+  <script>
+    const textPara = document.getElementById('textPara');
+    const increaseFontButton = document.getElementById('increaseFontButton');
+    const decreaseFontButton = document.getElementById('decreaseFontButton');
+
+    increaseFontButton.addEventListener('click', () => {
+      const currentSize = window.getComputedStyle(textPara, null).getPropertyValue('font-size');
+      const newSize = parseFloat(currentSize) * 1.2; // Increase font size by 20%
+      textPara.style.fontSize = newSize + 'px';
+    });
+
+    decreaseFontButton.addEventListener('click', () => {
+      const currentSize = window.getComputedStyle(textPara, null).getPropertyValue('font-size');
+      const newSize = parseFloat(currentSize) * 0.8; // Decrease font size by 20%
+      textPara.style.fontSize = newSize + 'px';
+    });
+  </script>
+</body>
+</html>

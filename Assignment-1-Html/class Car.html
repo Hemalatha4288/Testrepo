@@ -1,0 +1,23 @@
+class Car 
+ {
+    private _engine: Engine;
+    constructor( engine: Engine)
+    {
+        console.log("constructor called");
+        this.engine = engine;
+    }
+    get engine(): Engine {
+        return this._engine;
+    }
+    set engine(value: Engine) {
+        if (value == undefined) throw 'Please supply an engine';
+        this._engine = value;
+    }
+    start(): void {
+        console.log('Car engine started ' + this._engine.engineType);
+    }
+ }
+var engine = new Engine(300, 'V8');
+        var car = new Car(engine);
+        car.start();
+        
