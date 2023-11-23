@@ -1,0 +1,15 @@
+<p>login works!</p>
+<div>
+    <form (ngSubmit)="login()" #loginForm="ngForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" [(ngModel)]="username" required>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="password" required>
+  
+      <button type="submit" [disabled]="loginAttempts === 0">Login</button>
+    </form>
+  
+    <div *ngIf="loginAttempts === 0">Login disabled. You've exceeded the maximum attempts.</div>
+    <div *ngIf="loginMessage">{{ loginMessage }}</div>
+  </div>
